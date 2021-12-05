@@ -1,8 +1,9 @@
 import { useState } from "react";
 
 import Login from '../components/auth/login';
-import Home from './home/home'
+import Header from '../components/ui/header/header';
 
+import styles from '../styles/home/home.module.css'
 
 export default function App() {
   const [user, setUser] = useState(null);
@@ -13,7 +14,10 @@ export default function App() {
     )  
   }else{
     return(
-      <Home profile={user} />
+      
+      <div className={styles.home}>
+        <Header profile={user} />
+      </div>
     )
   }
 }
