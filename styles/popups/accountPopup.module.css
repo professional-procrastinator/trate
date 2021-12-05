@@ -1,0 +1,108 @@
+.popupBackground{
+    width:100%;
+    height:100%;
+}
+
+.popupParent{
+    padding-top:10px;
+    padding-right:30px;
+    width:fit-content;
+    margin-left:auto;
+}
+.popupDIV{
+    width:280px;
+    height:335px;
+    background-color:var(--popup-light-gray);
+    z-index:10;
+    border-radius:var(--popup-border-radius);
+    margin-left:auto; 
+    display:flex;
+    flex-flow:column;
+}
+
+.popupLinkDiv{
+    display:flex;
+    gap:15px;
+    padding-top:18px;
+    padding-left:18px;
+    padding-bottom:18px;
+    transition:all 0.1s;
+}
+.popupLinkDiv:hover{
+    background-color: var(--popup-link-hover);
+    cursor: pointer;
+}
+.profileIcon{
+    content: url('https://api.iconify.design/bx/bxs-user.svg?color=%23ACACAC');
+    width:32px;
+    height:32px;
+}
+.profilePopupLinkDiv{
+    
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+.profilePopupLinkDiv:hover .profileDivArrow{
+    display:flex;
+}
+.profileDivArrow{
+    margin-left:auto;
+    margin-top:auto;
+    margin-bottom:auto;
+    padding-right:20px;
+    display:none;
+    content: url('https://api.iconify.design/ep/arrow-right.svg?color=%23f8f8f8&height=16');
+}
+
+.settingsPopupLinkDiv:hover .settingsDivArrow{
+    display:flex;
+}
+.settingsDivArrow{
+    margin-left:auto;
+    margin-top:auto;
+    margin-bottom:auto;
+    padding-right:20px;
+    display:none;
+    content: url('https://api.iconify.design/ep/arrow-right.svg?color=%23f8f8f8&height=16');
+}
+.settingsIcon{
+    width:32px;
+    height:32px;
+    content: url('https://api.iconify.design/ci/settings-filled.svg?color=%23ACACAC');
+}
+.languageIcon{
+    width:32px;
+    height:32px;
+    content: url('https://api.iconify.design/codicon/globe.svg?color=%23ACACAC');
+}
+.logoutSeparator{
+    width:100%;
+    height:1px;
+    background-color:var(--separator-color);
+}
+.logoutIcon{
+    width:32px;
+    height:32px;
+    margin-top:auto;
+    margin-bottom:auto;
+    padding-left:18px;
+    content: url('https://api.iconify.design/ci/exit.svg?color=%23FF3F3F&height=32');
+}
+.logoutDivMain{
+    display:flex;
+    width:100%;
+    height:100%;
+    margin-top: auto;
+    margin-bottom:auto;
+    gap:15px;
+    cursor: pointer;
+}
+.logoutDivMain:hover{
+    font-weight: 500;
+}
+
+.bugIcon{
+    width:32px;
+    height:32px;
+    content: url('https://api.iconify.design/ant-design/bug-filled.svg?color=%23ACACAC&height=16');
+}
