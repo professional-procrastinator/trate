@@ -20,7 +20,7 @@ export default function Login({ providers }) {
                 <p className={styles.description}>Get started today.</p>
                
                         <div>
-                            <div onClick={() => signIn('google')} className={styles.loginButton}>
+                            <div onClick={() => signIn('google',{callbackUrl:window.location.href})} className={styles.loginButton}>
                                 <Image src={GLogo} className={styles.GLogo} />
                                 <p>Login with Google</p>
                             </div>
