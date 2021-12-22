@@ -18,18 +18,13 @@ export default function Login({ providers }) {
             <div className={styles.mainParent}>
                 <h1 className={styles.trateHeading}>Trate</h1>
                 <p className={styles.description}>Get started today.</p>
-                {
-
-                    Object.values(providers).map((provider) => (
-                        <div key={provider.name}>
-                            <div onClick={() => signIn(provider.id)} className={styles.loginButton}>
+               
+                        <div>
+                            <div onClick={() => signIn('google')} className={styles.loginButton}>
                                 <Image src={GLogo} className={styles.GLogo} />
-                                <p>Login with {provider.name}</p>
+                                <p>Login with Google</p>
                             </div>
                         </div>
-                    ))
-                
-                }
             </div>
         );
     }else{
