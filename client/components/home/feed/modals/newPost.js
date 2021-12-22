@@ -97,7 +97,7 @@ export default function NewPostPopup({newPost,closeModal}){
                             <p>{attachments.length}</p>
                             <input type="file" placeholder="Attachments" id="attachmentInput" style={{display:'none'}} onChange={(evt)=>{handleUpload(evt.target.files[0])}} />
                         </div>
-                        <label className={styles.attachmentIcon} for="attachmentInput" />
+                        <label className={styles.attachmentIcon} htmlFor="attachmentInput" />
                     </div>
 
                     {attachments.length==0?(
@@ -110,8 +110,8 @@ export default function NewPostPopup({newPost,closeModal}){
                     ):(
                         <div className={styles.attachmentPrevDiv}>
                         {
-                            attachments.map((attachment)=>{
-                                return(<AttachmentPreview attachment={attachment} remAttachment={removeAttachment}/>)
+                            attachments.map((attachment,index)=>{
+                                return(<AttachmentPreview key={index} attachment={attachment} remAttachment={removeAttachment}/>)
                             })
                         }
                     </div>)}
