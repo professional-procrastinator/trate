@@ -1,0 +1,47 @@
+.mainParent{
+    width: 100%;
+    padding-top: 200px;
+    height: 100%;
+    align-self: center;
+    display: flex;
+    align-content: center;
+    flex-flow: column;
+    gap:20px;
+}
+.trateHeading{
+    margin:auto;
+    color:white;
+}
+.description{
+    color:white;
+    margin:auto;
+}
+.loginButton{
+    margin:auto;
+    background-color: white;
+    border: none;
+    color: black;
+    font-weight:500;
+    padding: 0px 64px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 30px;
+    transition:all 0.2s;
+    width:fit-content;
+    height:fit-content;
+    gap:15px;
+}
+.loginButton:hover{
+    box-shadow: 3px 3px 10px 1px rgba(77,77,77,0.75);
+}
+
+
+.loginButton span{
+    margin-top:auto !important;
+    margin-bottom:auto !important;
+    width:32px !important;
+    height:32px !important;
+}

@@ -1,0 +1,86 @@
+.postCard{
+    position:relative;
+    padding:20px 20px;
+    max-width:100%;
+    border-radius: var(--popup-border-radius);
+    box-sizing:border-box;
+    border:1px solid var(--text-darkest-gray);
+    
+    transition: all 0.2s;
+}
+.postCard:hover {
+    background-color: #1a1a1a;
+}
+
+.userDiv{
+    display:flex;
+    width:100%;
+    height:fit-content;
+    gap:20px;
+    align-items: center;
+}
+.userImageDiv{
+    width:60px;
+    height:60px;
+}
+.userImage{
+    width:60px;
+    height:60px;
+    border-radius: 50%;
+}
+.userTextDiv{
+    height:fit-content;
+    display:flex;
+    flex-flow:column;
+    gap:5px;
+}
+.userFullName{
+    
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size:18px;
+    color:white;
+}
+.userName:hover{
+    color:var(--text-darker-gray)
+}
+.body{
+    color:white;
+    font-weight:300;
+}
+.postStatsText{
+    display:flex;
+    gap:7px;
+}
+.postStatsText a{
+    
+    color:var(--text-darkest-gray);
+    font-size:14px;
+}
+.statsSeparatorPeriod{
+    
+    color:var(--text-darkest-gray);
+    font-size:12px;
+    margin-top:auto;
+    margin-bottom:auto;
+}
+.attachmentListDiv{
+    display:grid;
+    flex-flow:row;
+    width:100%;
+    gap:20px;
+}
+.attachment{
+    border-radius: var(--popup-border-radius);
+   width:100%;
+   height:auto;
+   max-height: auto;
+}
+.detailsIcon{
+    margin-left:auto;
+    content: url('https://api.iconify.design/bi/three-dots-vertical.svg?height=20&color=%23646464');
+    cursor:pointer;
+}
+.detailsIcon:hover{
+    content: url('https://api.iconify.design/bi/three-dots-vertical.svg?height=20&color=gray');
+}

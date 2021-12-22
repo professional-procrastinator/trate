@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+  --background-dark:#161616;
+  --primary-color:#079cff;
+  --primary-color-dark:#088ce4;
+  --text-color-gray:#ACACAC;
+  --text-lighter-gray:#c8c8c8;
+  --text-darker-gray:#646464;
+  --darkest-gray:#161616;
+  --text-darkest-gray:#4B4B4B;
+  --dark-info-container:#121212;
+  --popup-light-gray:#292929;
+  --popup-border-radius:6px;
+  --popup-link-hover:#373737;
+  --popup-link-hover-dark:#2a2a2a;
+
+  --danger-red:#FF3F3F;
+  --danger-red-hover:#f62d2d;
+  --separator-color:#666666;
+
+  --jungle-green:#6ddf51;
+  --toastify-color-success:#079cff !important;
+}
+
+*{
+  outline:none;
+  font-family: 'Inter', sans-serif;
+}
+body,html{
+  margin:0;
+  padding:0;
+  
+  background-color: var(--background-dark);
+}
+
+.loader{
+  
+  display: inline-block;
+	border: 2px solid var(--primary-color);
+	border-left-color: transparent;
+	border-radius: 50%;
+	width: 30px;
+	height: 30px;
+	animation: donut-spin 0.8s linear infinite;
+  margin:auto;
+}
+
+@keyframes donut-spin {
+	0% {
+	  transform: rotate(0deg);
+	}
+	100% {
+	  transform: rotate(360deg);
+	}
+}
+
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px transparent; 
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 0 6px gray 
+}
+.ql-editor.ql-blank::before{
+  color:var(--text-darkest-gray) !important;
+  font-style: normal !important;
+  font-size:16px !important;
+}
+a{
+  text-decoration:none;
+  color:var(--primary-color);
+}
+
+.ql-toolbar.ql-snow{
+  
+  border:none !important;
+  border-bottom:0.2em solid var(--darkest-gray) !important;
+}
+.ql-container{
+  border:none;
+  max-height:175px;
+}
+.ql-snow.ql-toolbar button:hover, .ql-snow .ql-toolbar button:hover, .ql-snow.ql-toolbar button:focus, .ql-snow .ql-toolbar button:focus, .ql-snow.ql-toolbar button.ql-active, .ql-snow .ql-toolbar button.ql-active, .ql-snow.ql-toolbar .ql-picker-label:hover, .ql-snow .ql-toolbar .ql-picker-label:hover, .ql-snow.ql-toolbar .ql-picker-label.ql-active, .ql-snow .ql-toolbar .ql-picker-label.ql-active, .ql-snow.ql-toolbar .ql-picker-item:hover, .ql-snow .ql-toolbar .ql-picker-item:hover, .ql-snow.ql-toolbar .ql-picker-item.ql-selected, .ql-snow .ql-toolbar .ql-picker-item.ql-selected{
+  color:var(--primary-color);
+  outline:none;
+}
+.ql-toolbar.ql-snow .ql-picker.ql-expanded .ql-picker-label{
+  border:none;
+}
+.ql-toolbar.ql-snow + .ql-container.ql-snow{
+  border:none;
+  height:fit-content;
+}
+.ql-editor{
+  
+  max-height:450px;
+  min-height: 175px;
+}
+

@@ -1,0 +1,65 @@
+.feedContainer{
+    display:flex;
+    flex-flow:column;
+    max-width:50%;
+    margin:auto;
+    min-height:90vh;
+    max-height:90vh;
+    overflow-x:hidden;
+}
+
+.feedHeading{
+    color:white;
+    display:flex;
+}
+.feedBody{
+    
+    min-height: 100%;
+    display:flex;
+    flex-flow:column;
+    overflow-y: auto;
+    position: relative;
+    overflow-x: hidden;
+    
+    scroll-behavior: smooth;
+    border-radius: 4px;
+    scrollbar-width: thin;
+  scrollbar-color: gray transparent ;
+}
+.feedBodyList{
+    gap:20px;
+    display:flex;
+    flex-flow:column;
+    position:relative;
+    padding-right:10px;
+}
+
+.newPostButton{
+    display: flex;
+    background-color:var(--primary-color);
+    color:white;
+    font-weight:500;
+    font-family:'Inter';
+    width:fit-content;
+    padding:12px 22px;
+    border-radius:6px;
+    border:none;
+    outline:none;
+    cursor:pointer;
+    transition:all 0.2s;
+    margin-top: auto;
+    margin-bottom: auto;
+    position:sticky;
+    margin-left:auto;
+    gap:10px;
+}
+.newPostButton:hover{
+    background-color:var(--primary-color-dark);
+}
+.newPostButtonIcon{
+    content: url('https://api.iconify.design/majesticons/pencil.svg?height=24&color=white');
+}
+.newPostButtonText{
+    margin-top:auto;
+    margin-bottom:auto;
+}

@@ -1,0 +1,74 @@
+.popupOverlayDiv{
+    background-color: #101010;
+    margin-left:auto;
+    position:absolute;
+    top:40px;
+    z-index:2000;
+    right:20px;
+    border-radius:var(--popup-border-radius);
+    color:#ACACAC;
+    display:flex;
+    flex-flow:column;
+    animation:popup 0.1s forwards;
+}
+
+@keyframes popup {
+    0% {
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+  }
+
+.overlayOption{
+    gap:100px;
+    display:flex;
+    width:100%;
+    align-items:center;
+    transition:all 0.2s;
+    padding-top:5px;
+    padding-bottom:5px;
+    cursor:pointer;
+}
+.overlayOption:hover{
+    background-color: var(--popup-link-hover-dark);
+}
+#overlayOpen{
+    border-top-left-radius: 6px;
+    border-top-right-radius:6px;
+}
+
+.overlayOptionIcon{
+    margin-left:auto;
+    padding-right:20px;
+}
+.overlayOptionText{
+    padding-left:20px;
+}
+#overlayOpenIcon{
+    content: url('https://api.iconify.design/clarity/pop-out-line.svg?color=%23ACACAC&height=20');
+
+}
+#overlayShareIcon{
+    content: url('https://api.iconify.design/carbon/share.svg?color=%23ACACAC&height=20');
+}
+#overlayCopyIcon{
+    content: url('https://api.iconify.design/bi/link-45deg.svg?color=%23ACACAC&height=20');
+}
+#overlayReportIcon{
+    content: url('https://api.iconify.design/ant-design/exclamation-circle-outlined.svg?height=20&color=%23FF3F3F');
+}
+#overlayDeleteIcon{
+    content: url('https://api.iconify.design/bx/bx-trash-alt.svg?height=20&color=%23FF3F3F');
+}
+#overlayReportText{
+    color:var(--danger-red);
+}
+#overlayDeleteText{
+    color:var(--danger-red)
+}
+#overlayDelete{
+    border-bottom-left-radius:6px;
+    border-bottom-right-radius:6px;
+}

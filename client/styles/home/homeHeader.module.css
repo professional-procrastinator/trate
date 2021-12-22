@@ -1,0 +1,48 @@
+.header{
+    display:flex;
+    padding-right:25px;
+    padding-left:25px;
+    padding-top:25px;
+}
+
+.logo{
+    color:var(--primary-color);
+    margin-top:auto;
+    margin-bottom: auto;
+}
+.pfp{
+    width:50px;
+    height:50px;
+    margin-left:auto;
+    margin-top:auto;
+    margin-bottom:auto;
+    border-radius: 50%;
+    cursor: pointer;
+    transition:all 0.2s;
+    border:1px solid transparent;
+}
+.pfp:hover{
+    -webkit-box-shadow: 3px 3px 20px 1px rgba(77,77,77,0.75);
+    -moz-box-shadow: 3px 3px 20px 1px rgba(77,77,77,0.75);
+    box-shadow: 3px 3px 20px 1px rgba(77,77,77,0.75);
+}
+.pfp:focus{
+    border:1px solid var(--primary-color);
+}
+
+.loginButton{
+    margin-left:auto;
+    padding:13px 38px;
+    background-color:var(--primary-color);
+    color:white;
+    border:none;
+    outline:none;
+    border-radius: var(--popup-border-radius);
+    font-family:'Inter';
+    font-size:16px;
+    cursor:pointer;
+    transition:all 0.3s;
+}
+.loginButton:hover{
+    background-color:var(--primary-color-dark);
+}
