@@ -7,7 +7,7 @@ export default function Login(){
     return(
         <>
             <h2 style={{color:'var(--primary-color)'}}>Trate</h2>
-            <button onClick={()=>{signIn()}}>Sign up</button>
+            <button onClick={()=>{signIn('google',{callbackUrl:"https://trate.vercel.app"})}}>Sign up</button>
         </>
     )
 }
