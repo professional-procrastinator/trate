@@ -25,7 +25,7 @@ export default function Home(){
         });
         const profile = await response.json();
         setUserId(profile.user._id);
-        const socket = io('http://localhost:5001',{
+        const socket = io('https://trate.herokuapp.com/',{
                 auth: {
                     id:profile.user._id
                 }

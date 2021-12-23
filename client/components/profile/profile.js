@@ -17,7 +17,7 @@ export default function ProfileUI({profile}){
                         </div>
                     </div>
 
-                    <div className={styles.profileBio}>{profile.bio}</div>
+                    <div className={styles.proileBio}>{profile.bio}</div>
                 </div>
 
             </div>
