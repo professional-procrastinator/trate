@@ -72,7 +72,7 @@ app.get('/',(req,res)=>{
 
 
 
-const port = process.env.PORT || 5001;
+const port = process.env.PORT || 3001;
 httpServer.listen(port, ()=>{
     console.log(`The server is listening on port ${port}`)
 })
