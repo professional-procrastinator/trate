@@ -20,11 +20,14 @@ export default NextAuth({
     callbacks: {
       async error(message) {
         console.log(message);
+        
+        console.log(process.env.GOOGLE_CLIENT_ID,process.env.GOOGLE_SECRET)
       },
       async signIn(req, userAcc) {
         console.log(req,userAcc)
+        
+        console.log(process.env.GOOGLE_CLIENT_ID,process.env.GOOGLE_SECRET)
         const id_token = userAcc.id_token; //get id token from the request headers
-        console.log(id_token)
         const response = await fetch(`https://oauth2.googleapis.com/tokeninfo?id_token=${id_token}`) //verify token, and get user details from google oauth
 
         const accountData = await response.json()
