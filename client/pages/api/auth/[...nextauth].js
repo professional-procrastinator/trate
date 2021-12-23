@@ -21,7 +21,7 @@ export default NextAuth({
       async error(message) {
         console.log(message);
         
-        console.log(process.env.GOOGLE_CLIENT_ID,process.env.GOOGLE_SECRET)
+        console.log('CLIENT ID:'+process.env.GOOGLE_CLIENT_ID,'CLIENT SECRET'+process.env.GOOGLE_SECRET)
       },
       async signIn(req, userAcc) {
         console.log(req,userAcc)
