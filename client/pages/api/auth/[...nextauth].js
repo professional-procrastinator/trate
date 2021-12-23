@@ -17,6 +17,17 @@ export default NextAuth({
     }),
     // ...add more providers here
   ],
+  pages: {
+    signIn: '/',
+  },
+  debug: true
+
+  // A database is optional, but required to persist accounts in a database
+  // database: process.env.DATABASE_URL,
+});
+
+/*
+
     callbacks: {
       async error(message) {
         console.error(message);
@@ -56,12 +67,4 @@ export default NextAuth({
             newUser.save()
         }
       }
-  },
-  pages: {
-    signIn: '/',
-  },
-  debug: true
-
-  // A database is optional, but required to persist accounts in a database
-  // database: process.env.DATABASE_URL,
-});
+  },*/ 
