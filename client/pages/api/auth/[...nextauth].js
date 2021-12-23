@@ -24,8 +24,6 @@ export default NextAuth({
         
       },
       async signIn(req, userAcc) {
-        console.log(req,userAcc)
-        
         const id_token = userAcc.id_token; //get id token from the request headers
         const response = await fetch(`https://oauth2.googleapis.com/tokeninfo?id_token=${id_token}`) //verify token, and get user details from google oauth
 
